@@ -5,23 +5,23 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: "Mission-Driven",
-      description: "We're committed to delivering exceptional software solutions that exceed expectations."
+      title: "Focus-Driven",
+      description: "We focus on building a few great products rather than many average ones."
     },
     {
       icon: Lightbulb,
       title: "Innovation First",
-      description: "We stay ahead of technology trends to provide cutting-edge solutions for our clients."
+      description: "As a startup, we're agile and quick to adopt new technologies and approaches."
     },
     {
       icon: Users,
-      title: "Client-Focused",
-      description: "Your success is our success. We work closely with you throughout the entire development process."
+      title: "Personal Touch",
+      description: "Our small team means you get direct access to the people building your product."
     },
     {
       icon: Award,
-      title: "Quality Assured",
-      description: "We maintain the highest standards of code quality and testing to ensure reliable software."
+      title: "Quality Focus",
+      description: "We may be small, but we don't compromise on code quality and user experience."
     }
   ];
 
@@ -35,31 +35,31 @@ const About = () => {
             </h2>
             
             <p className="text-xl text-white/80 mb-6 leading-relaxed">
-              Founded in 2020, TechFlow has been at the forefront of software innovation, 
-              helping businesses transform their ideas into powerful digital solutions.
+              We're a young startup founded in 2023, passionate about creating software 
+              products that solve real problems for real people.
             </p>
             
             <p className="text-lg text-white/70 mb-8 leading-relaxed">
-              Our team of experienced developers, designers, and strategists work together 
-              to create software that not only meets your current needs but scales with 
-              your business growth. We believe in the power of technology to solve real-world 
-              problems and drive meaningful change.
+              Our small but dedicated team believes in quality over quantity. We've built 
+              several successful products and are constantly learning and growing. We may not 
+              have decades of experience, but we bring fresh perspectives, modern technologies, 
+              and genuine enthusiasm to every project.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-blue-400 mb-1">50+</div>
+                <div className="text-3xl font-bold text-blue-400 mb-1">8</div>
                 <div className="text-white/80">Team Members</div>
               </div>
               
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-purple-400 mb-1">4</div>
-                <div className="text-white/80">Years of Excellence</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">2</div>
+                <div className="text-white/80">Years Growing</div>
               </div>
               
               <div className="text-center sm:text-left">
-                <div className="text-3xl font-bold text-green-400 mb-1">15+</div>
-                <div className="text-white/80">Industries Served</div>
+                <div className="text-3xl font-bold text-green-400 mb-1">5+</div>
+                <div className="text-white/80">Products Launched</div>
               </div>
             </div>
           </div>

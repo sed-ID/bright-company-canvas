@@ -33,10 +33,10 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's Build Something Amazing
+            Let's Build Something Together
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Ready to transform your ideas into reality? Get in touch with us today and let's discuss your next project.
+            Ready to work with a passionate startup team? Let's discuss your project and see how we can help.
           </p>
         </div>
         
@@ -71,19 +71,19 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">Office</div>
-                  <div className="text-white/80">123 Tech Street, Innovation City, IC 12345</div>
+                  <div className="text-white/80">123 Startup Street, Innovation District, CA 12345</div>
                 </div>
               </div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
-              <h4 className="text-lg font-bold text-white mb-4">Why Choose TechFlow?</h4>
+              <h4 className="text-lg font-bold text-white mb-4">Why Work With Us?</h4>
               <ul className="space-y-2 text-white/80">
-                <li>✓ Expert team with 10+ years experience</li>
-                <li>✓ Agile development methodology</li>
-                <li>✓ 24/7 support and maintenance</li>
-                <li>✓ Transparent pricing and timelines</li>
-                <li>✓ Cutting-edge technology stack</li>
+                <li>✓ Direct access to our core team</li>
+                <li>✓ Agile and flexible approach</li>
+                <li>✓ Modern tech stack and best practices</li>
+                <li>✓ Competitive startup pricing</li>
+                <li>✓ Genuine passion for great products</li>
               </ul>
             </div>
           </div>

@@ -14,15 +14,15 @@ const Hero = () => {
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Build the Future with
+            Building the Future with
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              {" "}Cutting-Edge Software
+              {" "}Smart Software Solutions
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed">
-            We create innovative software solutions that transform businesses and drive growth. 
-            From web applications to mobile apps, we bring your ideas to life.
+            We're a growing startup creating innovative software products that solve real problems. 
+            Our small but passionate team builds quality solutions that make a difference.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -38,24 +38,24 @@ const Hero = () => {
               <div className="bg-white/20 p-3 rounded-full">
                 <Play className="h-5 w-5" />
               </div>
-              Watch Demo
+              See Our Work
             </button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-              <div className="text-3xl font-bold text-blue-400 mb-2">500+</div>
-              <div className="text-white/80">Projects Completed</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
+              <div className="text-white/80">Products Built</div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-              <div className="text-3xl font-bold text-purple-400 mb-2">99%</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
               <div className="text-white/80">Client Satisfaction</div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-              <div className="text-3xl font-bold text-green-400 mb-2">24/7</div>
-              <div className="text-white/80">Support Available</div>
+              <div className="text-3xl font-bold text-green-400 mb-2">Fast</div>
+              <div className="text-white/80">Development</div>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ const Contact = () => {
             Let's Build Something Together
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Ready to work with a passionate startup team? Let's discuss your project and see how we can help.
+            Ready to transform your business with cutting-edge software solutions? Let's discuss your project.
           </p>
         </div>
         
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">Email</div>
-                  <div className="text-white/80">hello@techflow.com</div>
+                  <div className="text-white/80">hello@benubina.com</div>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">Phone</div>
-                  <div className="text-white/80">+1 (555) 123-4567</div>
+                  <div className="text-white/80">+880 01811406470</div>
                 </div>
               </div>
               
@@ -71,19 +71,19 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-white font-semibold">Office</div>
-                  <div className="text-white/80">123 Startup Street, Innovation District, CA 12345</div>
+                  <div className="text-white/80">Available for remote consultations worldwide</div>
                 </div>
               </div>
             </div>
             
             <div className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-sm">
-              <h4 className="text-lg font-bold text-white mb-4">Why Work With Us?</h4>
+              <h4 className="text-lg font-bold text-white mb-4">Why Choose Benubina?</h4>
               <ul className="space-y-2 text-white/80">
-                <li>✓ Direct access to our core team</li>
-                <li>✓ Agile and flexible approach</li>
-                <li>✓ Modern tech stack and best practices</li>
-                <li>✓ Competitive startup pricing</li>
-                <li>✓ Genuine passion for great products</li>
+                <li>✓ Cutting-edge technology stack</li>
+                <li>✓ AI and automation expertise</li>
+                <li>✓ Custom software solutions</li>
+                <li>✓ Data engineering capabilities</li>
+                <li>✓ End-to-end project delivery</li>
               </ul>
             </div>
           </div>

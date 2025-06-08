@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Professional Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
             <Sparkles className="h-4 w-4 text-white" />
-            <span className="text-sm font-medium text-white">Growing Startup • Quality Focus • Modern Solutions</span>
+            <span className="text-sm font-medium text-white">Software Solutions • AI & Automation • Data & Insights</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -27,8 +27,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
-            We're a growing startup with a focused approach to building quality software products. 
-            Our small but passionate team delivers modern solutions that solve real business problems.
+            We specialize in custom software development, AI integration, and data engineering solutions. 
+            Our team delivers modern applications that solve real business problems with cutting-edge technology.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -50,8 +50,8 @@ const Hero = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-              <div className="text-3xl font-bold text-white mb-2">5+</div>
-              <div className="text-white/80 font-medium">Products Built</div>
+              <div className="text-3xl font-bold text-white mb-2">3</div>
+              <div className="text-white/80 font-medium">Core Services</div>
             </div>
             
             <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover:shadow-lg transition-all duration-200">

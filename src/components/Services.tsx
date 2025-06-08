@@ -36,18 +36,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-white">
+    <section id="services" className="py-20 px-6 bg-green-700">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="h-4 w-4 text-emerald-600" />
-            <span className="text-sm font-medium text-emerald-700">What We Do</span>
+          <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+            <Sparkles className="h-4 w-4 text-white" />
+            <span className="text-sm font-medium text-white">What We Do</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             We offer comprehensive software development services to help your business thrive in the digital age
           </p>
         </div>
@@ -56,22 +56,22 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white border border-slate-200 rounded-xl p-8 hover:border-emerald-200 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+              className="group bg-white/10 border border-white/20 rounded-xl p-8 hover:border-white/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden backdrop-blur-sm"
             >
-              <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
-                <service.icon className="h-6 w-6 text-white" />
+              <div className="bg-white p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
+                <service.icon className="h-6 w-6 text-green-700" />
               </div>
               
-              <h3 className="text-xl font-bold text-slate-800 mb-4">
+              <h3 className="text-xl font-bold text-white mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-white/80 leading-relaxed">
                 {service.description}
               </p>
               
               {/* Subtle accent line */}
-              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-emerald-500 to-green-600 w-0 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 h-1 bg-lime-400 w-0 group-hover:w-full transition-all duration-300"></div>
             </div>
           ))}
         </div>

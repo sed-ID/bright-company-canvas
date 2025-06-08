@@ -26,26 +26,26 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-gradient-to-br from-emerald-50 to-slate-50">
+    <section id="about" className="py-20 px-6 bg-gradient-to-br from-lime-500 to-green-600">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-white border border-emerald-200 rounded-full px-4 py-2 mb-8">
-              <Sparkles className="h-4 w-4 text-emerald-600" />
-              <span className="text-sm font-medium text-emerald-700">Our Story</span>
+            <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
+              <Sparkles className="h-4 w-4 text-white" />
+              <span className="text-sm font-medium text-white">Our Story</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               About 
-              <span className="text-emerald-600"> TechFlow</span>
+              <span className="text-lime-200"> TechFlow</span>
             </h2>
             
-            <p className="text-xl text-slate-600 mb-6 leading-relaxed">
+            <p className="text-xl text-white/90 mb-6 leading-relaxed">
               We're a young startup founded in 2023, passionate about creating software 
               products that solve real problems for real people.
             </p>
             
-            <p className="text-lg text-slate-600 mb-10 leading-relaxed">
+            <p className="text-lg text-white/80 mb-10 leading-relaxed">
               Our small but dedicated team believes in quality over quantity. We've built 
               several successful products and are constantly learning and growing. We may not 
               have decades of experience, but we bring fresh perspectives, modern technologies, 
@@ -54,18 +54,18 @@ const About = () => {
             
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">8</div>
-                <div className="text-slate-600 font-medium">Team Members</div>
+                <div className="text-3xl font-bold text-white mb-2">8</div>
+                <div className="text-white/80 font-medium">Team Members</div>
               </div>
               
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">2</div>
-                <div className="text-slate-600 font-medium">Years Growing</div>
+                <div className="text-3xl font-bold text-white mb-2">2</div>
+                <div className="text-white/80 font-medium">Years Growing</div>
               </div>
               
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">5+</div>
-                <div className="text-slate-600 font-medium">Products Launched</div>
+                <div className="text-3xl font-bold text-white mb-2">5+</div>
+                <div className="text-white/80 font-medium">Products Launched</div>
               </div>
             </div>
           </div>
@@ -74,17 +74,17 @@ const About = () => {
             {values.map((value, index) => (
               <div 
                 key={index}
-                className="bg-white border border-slate-200 rounded-xl p-6 hover:border-emerald-200 hover:shadow-lg transition-all duration-300"
+                className="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-white/40 hover:shadow-lg transition-all duration-300 backdrop-blur-sm"
               >
-                <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg w-fit mb-4">
-                  <value.icon className="h-5 w-5 text-white" />
+                <div className="bg-white p-3 rounded-lg w-fit mb-4">
+                  <value.icon className="h-5 w-5 text-green-700" />
                 </div>
                 
-                <h3 className="text-lg font-bold text-slate-800 mb-3">
+                <h3 className="text-lg font-bold text-white mb-3">
                   {value.title}
                 </h3>
                 
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-white/80 text-sm leading-relaxed">
                   {value.description}
                 </p>
               </div>

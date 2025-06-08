@@ -42,18 +42,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-green-700">
+    <section id="services" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
-            <Sparkles className="h-4 w-4 text-white" />
-            <span className="text-sm font-medium text-white">What We Do</span>
+          <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+            <Sparkles className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-accent">What We Do</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We offer comprehensive software development services to help your business thrive in the digital age
           </p>
         </div>
@@ -62,32 +62,32 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-white/10 border border-white/20 rounded-xl p-8 hover:border-white/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden backdrop-blur-sm"
+              className="group bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
             >
-              <div className="bg-white p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
-                <service.icon className="h-6 w-6 text-green-700" />
+              <div className="bg-accent/10 p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
+                <service.icon className="h-6 w-6 text-accent" />
               </div>
               
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-xl font-bold text-foreground mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-white/80 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 {service.description}
               </p>
 
               <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-lime-200 mb-3">Services Include:</h4>
+                <h4 className="text-sm font-semibold text-accent mb-3">Services Include:</h4>
                 {service.subservices.map((subservice, subIndex) => (
                   <div key={subIndex} className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-lime-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-white/70 text-sm leading-relaxed">{subservice}</span>
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-muted-foreground text-sm leading-relaxed">{subservice}</span>
                   </div>
                 ))}
               </div>
               
               {/* Subtle accent line */}
-              <div className="absolute bottom-0 left-0 h-1 bg-lime-400 w-0 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 h-1 bg-accent w-0 group-hover:w-full transition-all duration-300"></div>
             </div>
           ))}
         </div>

@@ -26,26 +26,26 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-gradient-to-br from-lime-500 to-green-600">
+    <section id="about" className="py-20 px-6 bg-background">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
-              <Sparkles className="h-4 w-4 text-white" />
-              <span className="text-sm font-medium text-white">Our Story</span>
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
+              <Sparkles className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-accent">Our Story</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About 
-              <span className="text-lime-200"> Benubina</span>
+              <span className="gradient-text"> Benubina</span>
             </h2>
             
-            <p className="text-xl text-white/90 mb-6 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
               We're a focused software development company passionate about creating 
               innovative solutions that transform businesses and drive growth.
             </p>
             
-            <p className="text-lg text-white/80 mb-10 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
               Our team specializes in modern software development, AI integration, and data 
               engineering. We bring fresh perspectives, cutting-edge technologies, and genuine 
               enthusiasm to every project we undertake.
@@ -53,13 +53,13 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">3</div>
-                <div className="text-white/80 font-medium">Core Services</div>
+                <div className="text-3xl font-bold text-primary mb-2">3</div>
+                <div className="text-muted-foreground font-medium">Core Services</div>
               </div>
               
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">15+</div>
-                <div className="text-white/80 font-medium">Technologies</div>
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <div className="text-muted-foreground font-medium">Technologies</div>
               </div>
             </div>
           </div>
@@ -68,17 +68,17 @@ const About = () => {
             {values.map((value, index) => (
               <div 
                 key={index}
-                className="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-white/40 hover:shadow-lg transition-all duration-300 backdrop-blur-sm"
+                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300"
               >
-                <div className="bg-white p-3 rounded-lg w-fit mb-4">
-                  <value.icon className="h-5 w-5 text-green-700" />
+                <div className="bg-accent/10 p-3 rounded-lg w-fit mb-4">
+                  <value.icon className="h-5 w-5 text-accent" />
                 </div>
                 
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-foreground mb-3">
                   {value.title}
                 </h3>
                 
-                <p className="text-white/80 text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {value.description}
                 </p>
               </div>

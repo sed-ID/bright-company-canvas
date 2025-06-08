@@ -29,56 +29,56 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-green-700">
+    <section id="contact" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Let's Build Something Together
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to transform your business with cutting-edge software solutions? Let's discuss your project.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-bold text-white mb-8">Get in Touch</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-8">Get in Touch</h3>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
-                <div className="bg-white p-3 rounded-lg">
-                  <Mail className="h-5 w-5 text-green-700" />
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <Mail className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-white font-semibold">Email</div>
-                  <div className="text-white/80">hello@benubina.com</div>
+                  <div className="text-foreground font-semibold">Email</div>
+                  <div className="text-muted-foreground">hello@benubina.com</div>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="bg-white p-3 rounded-lg">
-                  <Phone className="h-5 w-5 text-green-700" />
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <Phone className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-white font-semibold">Phone</div>
-                  <div className="text-white/80">+880 01811406470</div>
+                  <div className="text-foreground font-semibold">Phone</div>
+                  <div className="text-muted-foreground">+880 01811406470</div>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="bg-white p-3 rounded-lg">
-                  <MapPin className="h-5 w-5 text-green-700" />
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-white font-semibold">Office</div>
-                  <div className="text-white/80">Available for remote consultations worldwide</div>
+                  <div className="text-foreground font-semibold">Office</div>
+                  <div className="text-muted-foreground">Available for remote consultations worldwide</div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-sm">
-              <h4 className="text-lg font-bold text-white mb-4">Why Choose Benubina?</h4>
-              <ul className="space-y-2 text-white/80">
+            <div className="bg-card border border-border rounded-xl p-6">
+              <h4 className="text-lg font-bold text-foreground mb-4">Why Choose Benubina?</h4>
+              <ul className="space-y-2 text-muted-foreground">
                 <li>✓ Cutting-edge technology stack</li>
                 <li>✓ AI and automation expertise</li>
                 <li>✓ Custom software solutions</li>
@@ -89,10 +89,10 @@ const Contact = () => {
           </div>
           
           <div className="animate-fade-in">
-            <form onSubmit={handleSubmit} className="bg-white/10 border border-white/20 rounded-xl p-8 shadow-lg backdrop-blur-sm">
+            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-xl p-8 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-white font-semibold mb-2">
+                  <label htmlFor="name" className="block text-foreground font-semibold mb-2">
                     Name *
                   </label>
                   <input
@@ -102,13 +102,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full border border-white/30 rounded-lg px-4 py-3 text-white placeholder-white/60 bg-white/10 backdrop-blur-sm focus:outline-none focus:border-lime-400 transition-colors duration-200"
+                    className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
                     placeholder="Your name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-white font-semibold mb-2">
+                  <label htmlFor="email" className="block text-foreground font-semibold mb-2">
                     Email *
                   </label>
                   <input
@@ -118,14 +118,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full border border-white/30 rounded-lg px-4 py-3 text-white placeholder-white/60 bg-white/10 backdrop-blur-sm focus:outline-none focus:border-lime-400 transition-colors duration-200"
+                    className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
               
               <div className="mb-6">
-                <label htmlFor="company" className="block text-white font-semibold mb-2">
+                <label htmlFor="company" className="block text-foreground font-semibold mb-2">
                   Company
                 </label>
                 <input
@@ -134,13 +134,13 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full border border-white/30 rounded-lg px-4 py-3 text-white placeholder-white/60 bg-white/10 backdrop-blur-sm focus:outline-none focus:border-lime-400 transition-colors duration-200"
+                  className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
                   placeholder="Your company name"
                 />
               </div>
               
               <div className="mb-8">
-                <label htmlFor="message" className="block text-white font-semibold mb-2">
+                <label htmlFor="message" className="block text-foreground font-semibold mb-2">
                   Message *
                 </label>
                 <textarea
@@ -150,14 +150,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full border border-white/30 rounded-lg px-4 py-3 text-white placeholder-white/60 bg-white/10 backdrop-blur-sm focus:outline-none focus:border-lime-400 transition-colors duration-200 resize-none"
+                  className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-white text-green-800 px-8 py-4 rounded-lg hover:bg-lime-100 transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2 text-lg font-semibold shadow-lg"
+                className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2 text-lg font-semibold shadow-lg"
               >
                 Send Message
                 <Send className="h-5 w-5" />

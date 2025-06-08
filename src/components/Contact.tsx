@@ -29,70 +29,70 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-muted/30">
+    <section id="contact" className="py-20 px-6 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
             Let's Build Something Together
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your business with cutting-edge software solutions? Let's discuss your project.
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            Ready to work with a passionate startup team? Let's discuss your project and see how we can help.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Get in Touch</h3>
+            <h3 className="text-2xl font-bold text-slate-800 mb-8">Get in Touch</h3>
             
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
-                <div className="bg-accent/10 p-3 rounded-lg">
-                  <Mail className="h-5 w-5 text-accent" />
+                <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg">
+                  <Mail className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="text-foreground font-semibold">Email</div>
-                  <div className="text-muted-foreground">hello@benubina.com</div>
+                  <div className="text-slate-800 font-semibold">Email</div>
+                  <div className="text-slate-600">hello@techflow.com</div>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="bg-accent/10 p-3 rounded-lg">
-                  <Phone className="h-5 w-5 text-accent" />
+                <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg">
+                  <Phone className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="text-foreground font-semibold">Phone</div>
-                  <div className="text-muted-foreground">+880 01811406470</div>
+                  <div className="text-slate-800 font-semibold">Phone</div>
+                  <div className="text-slate-600">+1 (555) 123-4567</div>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="bg-accent/10 p-3 rounded-lg">
-                  <MapPin className="h-5 w-5 text-accent" />
+                <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg">
+                  <MapPin className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="text-foreground font-semibold">Office</div>
-                  <div className="text-muted-foreground">Available for remote consultations worldwide</div>
+                  <div className="text-slate-800 font-semibold">Office</div>
+                  <div className="text-slate-600">123 Startup Street, Innovation District, CA 12345</div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-card border border-border rounded-xl p-6">
-              <h4 className="text-lg font-bold text-foreground mb-4">Why Choose Benubina?</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>✓ Cutting-edge technology stack</li>
-                <li>✓ AI and automation expertise</li>
-                <li>✓ Custom software solutions</li>
-                <li>✓ Data engineering capabilities</li>
-                <li>✓ End-to-end project delivery</li>
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
+              <h4 className="text-lg font-bold text-slate-800 mb-4">Why Work With Us?</h4>
+              <ul className="space-y-2 text-slate-600">
+                <li>✓ Direct access to our core team</li>
+                <li>✓ Agile and flexible approach</li>
+                <li>✓ Modern tech stack and best practices</li>
+                <li>✓ Competitive startup pricing</li>
+                <li>✓ Genuine passion for great products</li>
               </ul>
             </div>
           </div>
           
           <div className="animate-fade-in">
-            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-xl p-8 shadow-lg">
+            <form onSubmit={handleSubmit} className="bg-white border border-slate-200 rounded-xl p-8 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-foreground font-semibold mb-2">
+                  <label htmlFor="name" className="block text-slate-700 font-semibold mb-2">
                     Name *
                   </label>
                   <input
@@ -102,13 +102,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
+                    className="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-700 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-colors duration-200"
                     placeholder="Your name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-foreground font-semibold mb-2">
+                  <label htmlFor="email" className="block text-slate-700 font-semibold mb-2">
                     Email *
                   </label>
                   <input
@@ -118,14 +118,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
+                    className="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-700 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-colors duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
               
               <div className="mb-6">
-                <label htmlFor="company" className="block text-foreground font-semibold mb-2">
+                <label htmlFor="company" className="block text-slate-700 font-semibold mb-2">
                   Company
                 </label>
                 <input
@@ -134,13 +134,13 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200"
+                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-700 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-colors duration-200"
                   placeholder="Your company name"
                 />
               </div>
               
               <div className="mb-8">
-                <label htmlFor="message" className="block text-foreground font-semibold mb-2">
+                <label htmlFor="message" className="block text-slate-700 font-semibold mb-2">
                   Message *
                 </label>
                 <textarea
@@ -150,14 +150,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground bg-background focus:outline-none focus:border-accent transition-colors duration-200 resize-none"
+                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-700 placeholder-slate-400 focus:outline-none focus:border-emerald-500 transition-colors duration-200 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2 text-lg font-semibold shadow-lg"
+                className="w-full bg-gradient-to-r from-emerald-500 to-green-600 text-white px-8 py-4 rounded-lg hover:from-emerald-600 hover:to-green-700 transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2 text-lg font-semibold shadow-lg"
               >
                 Send Message
                 <Send className="h-5 w-5" />

@@ -1,93 +1,77 @@
 
-import { Code, Smartphone, Database, Bot, BarChart3, Zap, Sparkles, Cloud, Palette, Cog } from "lucide-react";
+import { Code, Smartphone, Cloud, Database, Shield, Zap, Sparkles } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Software Solutions",
-      description: "Custom-built web and mobile apps that power your business.",
-      subservices: [
-        "Web Application Development (React, Node.js, Django, etc.)",
-        "Mobile App Development (iOS, Android, Flutter, React Native)",
-        "API Design & Integration",
-        "UI/UX Design & Prototyping",
-        "Cloud Deployment & DevOps (AWS, GCP, Docker, CI/CD)"
-      ]
+      title: "Web Development",
+      description: "Custom web applications built with modern frameworks like React, Next.js, and Node.js for optimal performance and user experience.",
     },
     {
-      icon: Bot,
-      title: "AI & Automation",
-      description: "Infuse intelligence into your products and workflows.",
-      subservices: [
-        "AI Integration into Existing Applications",
-        "Custom AI Model Development (NLP, CV, LLMs)",
-        "Agentic AI Systems (RAG pipelines, autonomous agents)",
-        "Chatbots & Virtual Assistants",
-        "Automated Workflows for Support, Search, and Insights"
-      ]
+      icon: Smartphone,
+      title: "Mobile Apps",
+      description: "Native and cross-platform mobile applications for iOS and Android that engage users and drive business growth.",
     },
     {
-      icon: BarChart3,
-      title: "Data & Insights",
-      description: "Unlock the value of your data with engineering and analytics.",
-      subservices: [
-        "ETL Pipeline Development & Automation",
-        "Data Engineering (Warehousing, Orchestration)",
-        "Data Analytics & BI Dashboards",
-        "Data Science & Predictive Modeling",
-        "Data Strategy & Consultation"
-      ]
+      icon: Cloud,
+      title: "Cloud Solutions",
+      description: "Scalable cloud infrastructure and deployment solutions using AWS, Azure, and Google Cloud Platform.",
+    },
+    {
+      icon: Database,
+      title: "Database Design",
+      description: "Robust database architecture and optimization for handling large-scale data with maximum efficiency and security.",
+    },
+    {
+      icon: Shield,
+      title: "Cybersecurity",
+      description: "Comprehensive security audits and implementation of best practices to protect your applications and data.",
+    },
+    {
+      icon: Zap,
+      title: "Performance Optimization",
+      description: "Speed optimization and performance tuning to ensure your applications run at peak efficiency.",
     }
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-muted/30">
+    <section id="services" className="py-20 px-6 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
-            <Sparkles className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-accent">What We Do</span>
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
+            <Sparkles className="h-4 w-4 text-emerald-600" />
+            <span className="text-sm font-medium text-emerald-700">What We Do</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             We offer comprehensive software development services to help your business thrive in the digital age
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+              className="group bg-white border border-slate-200 rounded-xl p-8 hover:border-emerald-200 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
             >
-              <div className="bg-accent/10 p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
-                <service.icon className="h-6 w-6 text-accent" />
+              <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-3 rounded-lg w-fit mb-6 group-hover:scale-110 transition-transform duration-200">
+                <service.icon className="h-6 w-6 text-white" />
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-4">
+              <h3 className="text-xl font-bold text-slate-800 mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-slate-600 leading-relaxed">
                 {service.description}
               </p>
-
-              <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-accent mb-3">Services Include:</h4>
-                {service.subservices.map((subservice, subIndex) => (
-                  <div key={subIndex} className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-muted-foreground text-sm leading-relaxed">{subservice}</span>
-                  </div>
-                ))}
-              </div>
               
               {/* Subtle accent line */}
-              <div className="absolute bottom-0 left-0 h-1 bg-accent w-0 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-emerald-500 to-green-600 w-0 group-hover:w-full transition-all duration-300"></div>
             </div>
           ))}
         </div>

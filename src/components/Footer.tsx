@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <Code className="h-8 w-8 text-emerald-500" />
-              <span className="text-2xl font-bold text-white">TechFlow</span>
+              <span className="text-2xl font-bold text-white">Benubina</span>
             </div>
             
             <p className="text-slate-300 mb-6 leading-relaxed">
@@ -42,11 +42,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold text-white mb-6">Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Web Development</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Mobile Apps</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Software Solutions</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">AI & Automation</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Data & Insights</a></li>
               <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Cloud Solutions</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Database Design</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Cybersecurity</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors duration-200">Mobile Development</a></li>
             </ul>
           </div>
           
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 mb-4 md:mb-0">
-              © 2024 TechFlow. All rights reserved.
+              © 2024 Benubina. All rights reserved.
             </p>
             
             <div className="flex space-x-6">

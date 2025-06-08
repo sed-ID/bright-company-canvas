@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Professional Badge */}
           <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-8">
             <Sparkles className="h-4 w-4 text-emerald-600" />
-            <span className="text-sm font-medium text-emerald-700">Growing Startup • Quality Focus • Modern Solutions</span>
+            <span className="text-sm font-medium text-emerald-700">Modern Solutions • Quality Focus • Innovation</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
@@ -27,8 +27,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-            We're a growing startup with a focused approach to building quality software products. 
-            Our small but passionate team delivers modern solutions that solve real business problems.
+            We're a dedicated team with a focused approach to building quality software products. 
+            Our passionate team delivers modern solutions that solve real business problems.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -50,8 +50,8 @@ const Hero = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="bg-white/70 backdrop-blur-sm border border-emerald-100 rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-              <div className="text-3xl font-bold text-emerald-600 mb-2">5+</div>
-              <div className="text-slate-600 font-medium">Products Built</div>
+              <div className="text-3xl font-bold text-emerald-600 mb-2">Quality</div>
+              <div className="text-slate-600 font-medium">Focused Solutions</div>
             </div>
             
             <div className="bg-white/70 backdrop-blur-sm border border-emerald-100 rounded-xl p-6 hover:shadow-lg transition-all duration-200">

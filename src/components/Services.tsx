@@ -1,37 +1,43 @@
 
-import { Code, Smartphone, Cloud, Database, Shield, Zap, Sparkles } from "lucide-react";
+import { Code, Smartphone, Cloud, Database, Shield, Zap, Sparkles, Bot, BarChart3 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Web Development",
-      description: "Custom web applications built with modern frameworks like React, Next.js, and Node.js for optimal performance and user experience.",
+      title: "Software Solutions",
+      description: "Custom-built web and mobile apps that power your business with modern frameworks and cutting-edge technologies.",
+      subservices: [
+        "Web Application Development (React, Node.js, Django)",
+        "Mobile App Development (iOS, Android, Flutter, React Native)",
+        "API Design & Integration",
+        "UI/UX Design & Prototyping",
+        "Cloud Deployment & DevOps (AWS, GCP, Docker, CI/CD)"
+      ]
     },
     {
-      icon: Smartphone,
-      title: "Mobile Apps",
-      description: "Native and cross-platform mobile applications for iOS and Android that engage users and drive business growth.",
+      icon: Bot,
+      title: "AI & Automation",
+      description: "Infuse intelligence into your products and workflows with advanced AI solutions and automation systems.",
+      subservices: [
+        "AI Integration into Existing Applications",
+        "Custom AI Model Development (NLP, CV, LLMs)",
+        "Agentic AI Systems (RAG pipelines, autonomous agents)",
+        "Chatbots & Virtual Assistants",
+        "Automated Workflows for Support, Search, and Insights"
+      ]
     },
     {
-      icon: Cloud,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and deployment solutions using AWS, Azure, and Google Cloud Platform.",
-    },
-    {
-      icon: Database,
-      title: "Database Design",
-      description: "Robust database architecture and optimization for handling large-scale data with maximum efficiency and security.",
-    },
-    {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Comprehensive security audits and implementation of best practices to protect your applications and data.",
-    },
-    {
-      icon: Zap,
-      title: "Performance Optimization",
-      description: "Speed optimization and performance tuning to ensure your applications run at peak efficiency.",
+      icon: BarChart3,
+      title: "Data & Insights",
+      description: "Unlock the value of your data with engineering and analytics solutions that drive business decisions.",
+      subservices: [
+        "ETL Pipeline Development & Automation",
+        "Data Engineering (Warehousing, Orchestration)",
+        "Data Analytics & BI Dashboards",
+        "Data Science & Predictive Modeling",
+        "Data Strategy & Consultation"
+      ]
     }
   ];
 
@@ -52,7 +58,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
@@ -66,9 +72,21 @@ const Services = () => {
                 {service.title}
               </h3>
               
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed mb-6">
                 {service.description}
               </p>
+              
+              <div className="space-y-2">
+                <h4 className="text-sm font-semibold text-emerald-600 mb-3">Key Services:</h4>
+                <ul className="space-y-2">
+                  {service.subservices.map((subservice, subIndex) => (
+                    <li key={subIndex} className="text-sm text-slate-600 flex items-start gap-2">
+                      <span className="text-emerald-500 mt-1">•</span>
+                      {subservice}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               
               {/* Subtle accent line */}
               <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-emerald-500 to-green-600 w-0 group-hover:w-full transition-all duration-300"></div>

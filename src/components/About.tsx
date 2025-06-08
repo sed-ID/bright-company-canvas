@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Target,
       title: "Focus-Driven",
-      description: "We focus on building a few great products rather than many average ones.",
+      description: "We focus on building great products that solve real business problems.",
     },
     {
       icon: Lightbulb,
       title: "Innovation First",
-      description: "As a startup, we're agile and quick to adopt new technologies and approaches.",
+      description: "We're agile and quick to adopt new technologies and modern approaches.",
     },
     {
       icon: Users,
       title: "Personal Touch",
-      description: "Our small team means you get direct access to the people building your product.",
+      description: "Our dedicated team means you get direct access to the people building your product.",
     },
     {
       icon: Award,
       title: "Quality Focus",
-      description: "We may be small, but we don't compromise on code quality and user experience.",
+      description: "We don't compromise on code quality and user experience.",
     }
   ];
 
@@ -37,35 +37,29 @@ const About = () => {
             
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               About 
-              <span className="text-emerald-600"> TechFlow</span>
+              <span className="text-emerald-600"> Benubina</span>
             </h2>
             
             <p className="text-xl text-slate-600 mb-6 leading-relaxed">
-              We're a young startup founded in 2023, passionate about creating software 
-              products that solve real problems for real people.
+              We're a passionate software development company founded with the mission to create 
+              innovative solutions that drive business growth and digital transformation.
             </p>
             
             <p className="text-lg text-slate-600 mb-10 leading-relaxed">
-              Our small but dedicated team believes in quality over quantity. We've built 
-              several successful products and are constantly learning and growing. We may not 
-              have decades of experience, but we bring fresh perspectives, modern technologies, 
-              and genuine enthusiasm to every project.
+              Our dedicated team believes in quality over quantity. We bring fresh perspectives, 
+              modern technologies, and genuine enthusiasm to every project. From AI integration 
+              to data insights, we help businesses leverage technology to achieve their goals.
             </p>
             
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">8</div>
-                <div className="text-slate-600 font-medium">Team Members</div>
+                <div className="text-3xl font-bold text-emerald-600 mb-2">Modern</div>
+                <div className="text-slate-600 font-medium">Technology Stack</div>
               </div>
               
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">2</div>
-                <div className="text-slate-600 font-medium">Years Growing</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">5+</div>
-                <div className="text-slate-600 font-medium">Products Launched</div>
+                <div className="text-3xl font-bold text-emerald-600 mb-2">AI-First</div>
+                <div className="text-slate-600 font-medium">Approach</div>
               </div>
             </div>
           </div>

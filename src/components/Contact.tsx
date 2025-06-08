@@ -36,7 +36,7 @@ const Contact = () => {
             Let's Build Something Together
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Ready to work with a passionate startup team? Let's discuss your project and see how we can help.
+            Ready to work with a dedicated team? Let's discuss your project and see how we can help.
           </p>
         </div>
         
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-slate-800 font-semibold">Email</div>
-                  <div className="text-slate-600">hello@techflow.com</div>
+                  <div className="text-slate-600">hello@benubina.com</div>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-slate-800 font-semibold">Phone</div>
-                  <div className="text-slate-600">+1 (555) 123-4567</div>
+                  <div className="text-slate-600">+880 01811406470</div>
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-slate-800 font-semibold">Office</div>
-                  <div className="text-slate-600">123 Startup Street, Innovation District, CA 12345</div>
+                  <div className="text-slate-600">Available for Remote & On-site Projects</div>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <li>✓ Direct access to our core team</li>
                 <li>✓ Agile and flexible approach</li>
                 <li>✓ Modern tech stack and best practices</li>
-                <li>✓ Competitive startup pricing</li>
+                <li>✓ AI-first development methodology</li>
                 <li>✓ Genuine passion for great products</li>
               </ul>
             </div>

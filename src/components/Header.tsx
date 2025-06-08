@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X, Code, Sparkles } from "lucide-react";
+import { Menu, X, Code } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +21,7 @@ const Header = () => {
             <div className="bg-gradient-to-r from-emerald-500 to-green-600 p-2.5 rounded-xl group-hover:scale-105 transition-transform duration-200">
               <Code className="h-7 w-7 text-white" />
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-2xl font-bold text-slate-800">TechFlow</span>
-              <div className="bg-gradient-to-r from-lime-400 to-emerald-500 px-2.5 py-1 rounded-full">
-                <span className="text-xs font-semibold text-white">STARTUP</span>
-              </div>
-            </div>
+            <span className="text-2xl font-bold text-slate-800">Benubina</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -57,12 +52,6 @@ const Header = () => {
             >
               Contact
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-500 group-hover:w-full transition-all duration-300"></div>
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-6 py-2.5 rounded-lg hover:from-emerald-600 hover:to-green-700 transition-all duration-200 transform hover:scale-105 font-semibold shadow-lg"
-            >
-              Get Started
             </button>
           </nav>
 
@@ -100,12 +89,6 @@ const Header = () => {
                 className="text-slate-600 hover:text-emerald-600 transition-colors duration-200 text-left font-medium"
               >
                 Contact
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-6 py-2.5 rounded-lg hover:from-emerald-600 hover:to-green-700 transition-all duration-200 w-fit font-semibold"
-              >
-                Get Started
               </button>
             </div>
           </nav>
